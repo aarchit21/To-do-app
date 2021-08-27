@@ -1,0 +1,165 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  height: 100%;
+  background-color: #111;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: 50px;
+  margin: 16px 0px 48px;
+  text-align: center;
+  color: white;
+
+}
+
+.styling{
+  font-weight: 20px;
+  color: lime;
+}
+
+#firstclass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#inputclass1{
+  padding: 8px 16px;
+  height: 50px;
+  outline: none;
+  background-color: white;
+  width: 450px;
+  font-size: 18px;
+  margin: 4px;
+  border-radius: 25px;
+}
+
+#btn1{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: orange;
+  font-size: 25px;
+  margin: 4px;
+
+}
+
+#btn1:hover{
+  opacity: 0.9;
+}
+#btn2{
+  height: 50px;
+  width: 70px;
+  border-radius: 15px;
+  margin: 4px;
+  text-align: center;
+}
+
+#btn3{
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  margin: 4px;
+  text-align: center;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: white;
+  font-size: 22px;
+  transition: 0.2s;
+  border-radius: 5px;
+
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #F5DFDF;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+}
+
+.cross{
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px 16px 12px 16px;
+  text-decoration-color: black;
+  height: 58px;
+}
+
+.close:hover{
+  background-color: #f44336;
+ color: white;
+}
+
+.edit{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  text-decoration-color: black;
+  height: 58px;
+  margin-right: 50px;
+
+}
+.edit:hover{
+  background-color: #f44336;
+ color: white;
+}
